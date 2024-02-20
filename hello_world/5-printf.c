@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-/* This program prints "with proper grammar, but the outcome is a piece of art," */
+/**
+ * main - Entry point
+ *
+ * Description: This program prints "with proper grammar,
+ * but the outcome is a piece of art," using the puts function.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-/* Fix: Open brace '{' following function declarations goes on the next line */
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-/* Fix: No spaces at the start of a line */
-/* Fix: Parentheses are required on a return statement */
 	return (0);
 }
 
