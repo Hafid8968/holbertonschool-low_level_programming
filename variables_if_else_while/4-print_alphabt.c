@@ -5,7 +5,7 @@ int main(void) {
 
         for (alphabet = 'a'; alphabet <= 'z'; alphabet++) {
             /* Exclude the letters 'e' and 'i' from printing */
-            if (alphabet != 'e' && alphabet != 'i') {
+            if (alphabet != 'e' && alphabet != 'q') {
                 putchar(alphabet);
             }
         }
