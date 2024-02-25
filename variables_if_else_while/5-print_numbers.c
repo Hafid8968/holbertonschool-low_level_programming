@@ -14,8 +14,8 @@ int main(void)
 		putchar(numbers);
 	}
 
-	/* Ajout d'un saut de ligne pour une meilleure lisibilité */
 	putchar('\n');
-	return 0;
+
+	return (0);
 }
 
