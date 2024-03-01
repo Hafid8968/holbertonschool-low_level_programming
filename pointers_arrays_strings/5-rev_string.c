@@ -17,12 +17,12 @@ void rev_string(char *s)
 
 	while (start < end)
 	{
-        s[start] ^= s[end];
-        s[end] ^= s[start];
-        s[start] ^= s[end];
+	s[start] ^= s[end];
+	s[end] ^= s[start];
+	s[start] ^= s[end];
 
-        start++;
-        end--;
+	start++;
+	end--;
 	}
 }
 
