@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts_reverse - Prints a string in reverse followed by a new line to stdout.
- * @str: Pointer to the string to be printed.
+ * print_rev - Prints a string in reverse followed by a new line.
+ * @s: Pointer to the string to be printed.
  */
-void _puts_reverse(char *str)
+void print_rev(char *s)
 {
     int length = 0;
 
