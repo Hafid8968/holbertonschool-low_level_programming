@@ -1,5 +1,3 @@
-// atoi.c
-
 #include "main.h"
 
 /**
