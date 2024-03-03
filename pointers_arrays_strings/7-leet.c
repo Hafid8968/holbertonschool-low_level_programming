@@ -8,20 +8,22 @@
  */
 char *leet(char *s)
 {
-    int i, j;
-    char leet_map[10] = {'o', 'l', '\0', 'e', 'a', '\0', '\0', 't', '\0', '\0'};
+	int x, i;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        for (j = 0; j < 10; j++)
-        {
-            if ((s[i] == leet_map[j]) || (s[i] == leet_map[j] - 32))
-            {
-                s[i] = '0' + j;
-                break;
-            }
-        }
-    }
+	char *leet_chars = "aAeEoOtTlL";
+	char *leet_replacements = "4433007711";
 
-    return s;
+	for (x = 0; s[x] != '\0'; x++)
+	{
+	for (i = 0; i < 10; i++)
+	{
+	if (s[x] == leet_chars[i])
+	{
+	s[x] = leet_replacements[i];
+	break;
+	}
+	}
+	}
+
+	return (s);
 }
