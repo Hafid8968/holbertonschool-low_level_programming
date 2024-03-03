@@ -6,21 +6,15 @@
  *
  * Return: A pointer to the modified string.
  */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-    int i = 0;
+	int i;
 
-    while (str[i] != '\0')
-    {
-        // Check if the current character is a lowercase letter
-        if (str[i] >= 'a' && str[i] <= 'z')
-        {
-            // Convert to uppercase by subtracting the ASCII difference
-            str[i] = str[i] - ('a' - 'A');
-        }
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	if (s[i] >= 'a' && s[i] <= 'z')
+	s[i] = s[i] - 32;
+	}
 
-        i++;
-    }
-
-    return str;
+	return (s);
 }
