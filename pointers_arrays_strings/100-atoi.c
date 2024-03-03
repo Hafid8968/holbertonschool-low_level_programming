@@ -10,29 +10,28 @@
  */
 int _atoi(char *s)
 {
-    int result = 0;
-    int sign = 1; // Default positive sign
+    int sign;
+    unsigned int result;
 
-    while (*s != '\0')
-    {
+    sign = 1;
+    result = 0;
+
+    do {
         if (*s == '-')
         {
-            sign *= -1; // Change sign if a negative sign is encountered
+            sign *= -1;
         }
         else if (*s >= '0' && *s <= '9')
         {
-            // Accumulate the digit in the result
-            result = result * 10 + (*s - '0');
+            result = (result * 10) + (*s - '0');
         }
-        else if (result != 0)
+        else if (result > 0)
         {
-            // Break if a non-digit is encountered after digits
             break;
         }
 
-        s++;
-    }
+    } while (*s++);
 
-    return result * sign;
+    return (result * sign);
 }
 
